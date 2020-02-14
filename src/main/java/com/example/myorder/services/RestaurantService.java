@@ -37,4 +37,8 @@ public class RestaurantService {
                 .setPhone(restaurant.getPhone());
     }
 
+    public Restaurant findById(Integer id){
+        return restaurantRepository.findById( id ).orElse( null );
+    }
+
 }

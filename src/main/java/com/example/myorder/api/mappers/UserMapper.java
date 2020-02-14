@@ -6,7 +6,7 @@ import com.example.myorder.entities.User;
 import org.modelmapper.ModelMapper;
 
 public class UserMapper {
-    // Copia os atributos de uma classe pra outra.
+
     private static final ModelMapper modelMapper = new ModelMapper();
 
     public static User toEntity(CreateUserDto createUserDto) {
